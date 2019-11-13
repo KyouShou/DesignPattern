@@ -1,4 +1,5 @@
 ﻿using DesignPattern.FacadePattern;
+using DesignPattern.SingletonPattern;
 using DesignPattern.StatePattern;
 using DesignPattern.StatePattern.ConcreteState;
 using System;
@@ -13,7 +14,7 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
-            RunFacadePattern();
+            RunSingletonPattern();
 
             Console.Read();
         }
@@ -33,6 +34,18 @@ namespace DesignPattern
         {
             var user = new User();
             user.UserStartComputer();
+        }
+
+        private static void RunSingletonPattern()
+        {
+            Singleton.Instance.Name = "Hello";
+            Singleton.Instance.Name = "World";
+
+            Console.WriteLine(Singleton.Instance.Name);
+
+            //建構子用private層級，使其無法初始化
+            //var singleton = new Singleton();
+
         }
     }
 }

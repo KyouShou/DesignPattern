@@ -50,6 +50,7 @@
     <Compile Include="FacadePattern\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingletonPattern\Singleton.cs" />
     <Compile Include="StatePattern\ConcreteState\ConcreteStateA.cs" />
     <Compile Include="StatePattern\ConcreteState\ConcreteStateB.cs" />
     <Compile Include="StatePattern\ConcreteState\ConcreteStateC.cs" />
